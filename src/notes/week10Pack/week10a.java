@@ -16,6 +16,7 @@ package notes.week10Pack;
 
 
 public class week10a{
+    private static int obj=0;
     public static void main(String[] args) {
         subClass a = new subClass(){
             public int show(){
@@ -27,7 +28,13 @@ public class week10a{
                 return 0;
             }
         };
-        a.show();
+        sub();
+        System.out.println(obj);
+//        a.show();
+    }
+
+    public static void sub(){
+        obj=1;
     }
 }
 
